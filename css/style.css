@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+#imagen {
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    display: block;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px 20px 0 20px;
+    box-sizing: border-box;
+    background: aqua;
+    background: radial-gradient(circle, rgb(44, 82, 82)1%, rgb(17, 243, 243)100%);
+    margin: 100px auto;
+    box-shadow: 0 2px 10px black;
+}
+
+.tarjeta input {
+    font-size: 28px;
+    padding: 2px;
+    border: solid 2px rgb(25, 97, 231);
+    color: azure;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 10px;
+    outline: none;
+    /*Dibujar un marco en las classe o el id*/
+}
+
+.tarjeta #inputTarjeta::before {
+    content: "Card Number";
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.tarjeta #inputFecha {
+    width: 80px;
+}
+
+.tarjeta #inputCVV {
+    width: 50px;
+}
+
+.propietario {
+    display: grid;
+    color: azure;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+#chip {
+    background-image: url("../img/chip.png");
+    width: 68px;
+    height: 52px;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+#logoBanco {
+    background-image: url("../img/logobanco.png");
+    width: 250px;
+    height: 40px;
+    background-size: cover;
+    margin-left: 160px;
+    /*derecha*/
+    margin-top: 20px;
+    /*arriba*/
+}
+
+#imagen2 {
+    display: flex;
+    align-items: end;
+}
+
+#masterLogo {
+    background-image: url("../img/master.png");
+    width: 80px;
+    height: 62px;
+    background-size: cover;
+    margin-top: -80px 0px 0px 370px;
+}
